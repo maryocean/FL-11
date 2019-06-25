@@ -51,15 +51,19 @@
         font-weight: bold;
         font-size: 70px;
         color: #FFFFFF;
-        width: 480px; }
+        width: 480px;
+        position: relative;
+        z-index: 999; }
       .header .header-wrap .header_heading::after {
         display: block;
         content: '';
-        width: 160px;
+        width: 293px;
         height: 27px;
-        background: #FF4E33;
-        position: absolute;
-        z-index: 1; }
+        background: #14A0C7;
+        position: relative;
+        z-index: -1;
+        margin-top: -32px;
+        margin-left: 1px; }
       .header .header-wrap .my-header-text, .header .header-wrap .header_text {
         font-family: "Fresca", sans-serif;
         color: #FFFFFF;
@@ -86,6 +90,16 @@
       font-weight: 600;
       font-size: 3.25rem;
       margin: 3rem 0 3rem 0; }
+    .section .section_text::after {
+      display: block;
+      content: '';
+      width: 232px;
+      height: 19px;
+      background: #FF4E33;
+      position: relative;
+      z-index: -1;
+      margin-top: -26px;
+      margin-left: 932px; }
     .section .section_card_wrap {
       width: 1586px;
       margin: 0 auto;
@@ -150,7 +164,19 @@
           color: #FFFFFF;
           font-weight: 900;
           font-size: 2.5rem;
-          margin: 0; }
+          margin: 0;
+          position: relative;
+          z-index: 999; }
+        .section .section_banner .section_banner_text_wrap .section_banner_heading::after {
+          display: block;
+          content: '';
+          width: 86px;
+          height: 19px;
+          background: #FF4E33;
+          position: relative;
+          z-index: -1;
+          margin-top: -27px;
+          margin-left: 159px; }
         .section .section_banner .section_banner_text_wrap .section_banner_text {
           color: #D1D1D1;
           font-size: 1.25rem; }

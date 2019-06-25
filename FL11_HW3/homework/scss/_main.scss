@@ -41,7 +41,6 @@
             margin: 0 auto;
             padding: 1.5rem 2rem;
 
-
             .landing-logo {
                 font-family: $fontfamily2;
                 display: flex;
@@ -82,16 +81,20 @@
                 font-size: 70px;
                 color: $colorHeading;
                 width: 480px;
+                position: relative;
+                z-index: 999;
             }
 
             .header_heading::after {
                 display: block;
                 content: '';
-                width: map-get($widths, "small");
+                width: 293px;
                 height: 27px;
-                background: $underlineTextColorIndex;
-                position: absolute;
-                z-index: 1;
+                background: #14A0C7;
+                position: relative;
+                z-index: -1;
+                margin-top: -32px;
+                margin-left: 1px;
             }
 
             .my-header-text {
@@ -123,6 +126,18 @@
             font-weight: 600;
             font-size: 3.25rem;
             margin: 3rem 0 3rem 0;
+        }
+
+        .section_text::after {
+            display: block;
+            content: '';
+            width: 232px;
+            height: 19px;
+            background: $underlineTextColorIndex;
+            position: relative;
+            z-index: -1;
+            margin-top: -26px;
+            margin-left: 932px;
         }
 
         .section_card_wrap {
@@ -204,6 +219,20 @@
                     font-weight: 900;
                     font-size: 2.5rem;
                     margin: 0;
+                    position: relative;
+                    z-index: 999;
+                }
+    
+                .section_banner_heading::after {
+                    display: block;
+                    content: '';
+                    width: 86px;
+                    height: 19px;
+                    background: $underlineTextColorIndex;
+                    position: relative;
+                    z-index: -1;
+                    margin-top: -27px;
+                    margin-left: 159px;
                 }
 
                 .section_banner_text {
