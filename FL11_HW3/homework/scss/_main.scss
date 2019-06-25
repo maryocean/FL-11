@@ -15,6 +15,7 @@
     }
 
     body {
+        background-color: $colorBackground;
         padding: 0;
         margin: 0;
     }
@@ -40,17 +41,25 @@
             margin: 0 auto;
             padding: 1.5rem 2rem;
 
+
             .landing-logo {
                 font-family: $fontfamily2;
                 display: flex;
 
                 img {
                     position: absolute;
+                    padding-top: 4px;
                 }
 
                 p {
+                    margin: 0;
+                    padding-left: 60px;
+                    padding-top: 0;
+                    font-size: 28px;
+                    font-weight: 600;
                     display: flex;
                     color: $colorHeading;
+                    transform: scale(.9, 1);
 
                     span {
                         position: absolute;
@@ -72,6 +81,7 @@
                 font-weight: bold;
                 font-size: 70px;
                 color: $colorHeading;
+                width: 480px;
             }
 
             .header_heading::after {
@@ -79,7 +89,7 @@
                 content: '';
                 width: map-get($widths, "small");
                 height: 27px;
-                background: #14a0c7;
+                background: $underlineTextColorIndex;
                 position: absolute;
                 z-index: 1;
             }
@@ -88,6 +98,8 @@
                 font-family: $fontfamily2;
                 color: $colorHeading;
                 padding-bottom: 35px;
+                white-space: pre;
+
             }
 
             .header_text {
@@ -137,7 +149,7 @@
                     display: inline-block;
                     position: relative;
                     color: $colorCardHeading;
-                    font-family: $fontfamily2;
+                    font-family: $fontfamily3;
                     font-size: 1.85rem;
                     font-weight: 800;
                     margin: 0.8rem 0;
@@ -149,13 +161,13 @@
                     bottom: 8px;
                     width: 100%;
                     height: 1rem;
-                    background: #14a0c7;
+                    background: $underlineTextColorIndex;
                     z-index: 1;
                 }
 
                 .section_card_text {
                     color: $colorCardText;
-                    font-family: $fontfamily3;
+                    font-family: $fontfamily2;
                     font-size: 1.32rem;
                     line-height: 1.4;
                     margin: 0.8rem 0;
@@ -227,13 +239,28 @@
             }
 
             .footer_logo {
+                display: flex;
+
+                img {
+                    position: absolute;
+                    padding-top: 6px;
+                }
+
                 p {
-                    display: inline-block;
+                    display: flex;
                     font-size: 1.75rem;
                     font-weight: 900;
+                    transform: scale(.9, 1);
+                    color: $colorCardText;
+                    margin: 0;
+                    padding-left: 60px;
+                    padding-top: 0;
 
                     span {
                         font-size: 1rem;
+                        position: absolute;
+                        padding-top: 36px;
+                        padding-left: 17px;
                     }
                 }
             }
