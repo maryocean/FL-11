@@ -8,8 +8,8 @@
         padding: 1rem 4rem;
         font-family: $fontfamily3;
         font-size: 1.5rem;
-        background-color: $colorButton;
-        color: $colorButtonText;
+        background-color: map-get($buttonColors, "colorButton");
+        color: map-get($buttonColors, "colorButtonText");
         border: none;
         border-radius: 4px;
     }
@@ -176,7 +176,7 @@
         }
 
         .section_banner {
-            background: linear-gradient(45deg, $colorButton, $colorGradient);
+            background: linear-gradient(45deg, map-get($buttonColors, "colorButton"), $colorGradient);
             position: absolute;
             bottom: 0;
             left: 0;
@@ -257,7 +257,7 @@
                     padding-top: 0;
 
                     span {
-                        font-size: 1rem;
+                        font-size: 10px;
                         position: absolute;
                         padding-top: 36px;
                         padding-left: 17px;
