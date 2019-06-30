@@ -195,7 +195,7 @@ body {
     grid-area: like;
     justify-self: end;
     align-self: start;
-    margin: 1rem 0.65rem 0 0;
+    margin: 1rem 0.75rem 0 0;
     border: 1.5px solid white;
     padding: 0.25rem 0.5rem;
     background-color: rgba(0, 0, 0, 0.5);
