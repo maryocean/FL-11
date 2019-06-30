@@ -262,7 +262,7 @@ body {
 }
 
 .news_wrapper .card {
-    background-position: center top;
+    background-position: left;
     background-size: cover;
     box-shadow: inset 0 -20px 30px 15px rgba(0, 0, 0, 0.3);
     display: grid;
@@ -341,7 +341,6 @@ body {
     font-weight: 600;
 }
 
-
 .newsletter_subscribe input {
     background-color: transparent;
     padding-right: 0px;
@@ -373,6 +372,6 @@ body {
     float: right;
 }
 
-.tm_nav_item_link {
+.footer_nav a {
     padding-left: 20px;
 }
