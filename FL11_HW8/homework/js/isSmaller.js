@@ -1,7 +1,5 @@
 function isSmaller(a,b) {
-    var isSmaller = a < b;
-    return isSmaller;
+    return a < b;
 }
 
-var funcResult = isSmaller(7,12);
-console.log(funcResult);
+console.log(isSmaller(5,-1));

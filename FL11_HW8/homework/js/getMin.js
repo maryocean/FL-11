@@ -8,4 +8,5 @@ function getMin() {
     }
     return min;
 }
+
 console.log(getMin(3, 0, -3));

@@ -1,9 +1,8 @@
 function isBigger(a,b) {
-    var isBigger = a > b;
-    return isBigger;
+    return a > b;
 }
-var funcResult = isBigger(3,0);
-console.log(funcResult);
+
+console.log(isBigger(5,-1));
 
 
 
