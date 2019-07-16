@@ -216,14 +216,23 @@ console.log(getAmountOfAdultPeople(data));
 
 // 9
 function keys(obj) {
-    return Object.keys(obj);
+    let outPutArray = [];
+    for (let property in obj) {
+        outPutArray.push(property)
+    }
+    console.log(outPutArray);
 }
 
-console.log(keys({ keyOne: 1, keyTwo: 2, keyThree: 3 }));
+keys({ keyOne: 1, keyTwo: 2, keyThree: 3 });
 
 // 10
 function values(obj) {
-    return Object.values(obj);
+    let outPutArray = [];
+    for (let property in obj) {
+        outPutArray.push(obj[property])
+    }
+    console.log(outPutArray);
+    return outPutArray;
 }
 
-console.log(values({ keyOne: 1, keyTwo: 2, keyThree: 3 }));
+values({ keyOne: 1, keyTwo: 2, keyThree: 3 });
