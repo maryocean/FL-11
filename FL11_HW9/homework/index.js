@@ -215,9 +215,9 @@ function getAmountOfAdultPeople(peopleArr) {
 console.log(getAmountOfAdultPeople(data));
 
 // 9
-function keys(obj) {
+function keys(inputObject) {
     let outPutArray = [];
-    for (let property in obj) {
+    for (let property in inputObject) {
         outPutArray.push(property)
     }
     console.log(outPutArray);
@@ -226,10 +226,10 @@ function keys(obj) {
 keys({ keyOne: 1, keyTwo: 2, keyThree: 3 });
 
 // 10
-function values(obj) {
+function values(inputObject) {
     let outPutArray = [];
-    for (let property in obj) {
-        outPutArray.push(obj[property])
+    for (let property in inputObject) {
+        outPutArray.push(inputObject[property])
     }
     console.log(outPutArray);
     return outPutArray;
