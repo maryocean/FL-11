@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 11 - TODO Cat List</title>
+  <link rel="stylesheet" href="./assets/material-icons/material-icons.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+  <div id="root">
+    <h1>TODO Cat List</h1>
+    <div class="todo-nav">
+      <div class="todo-input-wrapper">
+        <input type="text" id="todo-input" placeholder="Add new action">
+      </div>
+      <button class="material-icons" id="add-btn" disabled>add_box</button>
+    </div>
+    <p id="notification" class="hidden">Maximum item per list are created</p>
+    <hr class="horizontal-line">
+    <ul id="todo-list" ondragover="dragOver(event)">
+      <li id="todo-item-template" class="hidden" draggable="true" ondragstart="dragStart(event)"
+        ondragend="dragEnd(event)">
+        <span class="checkbox" onclick="checkItem(event)"><i class="material-icons">done</i></span>
+        <p></p>
+        <div class="edit-input-wrapper">
+          <input class="edit-input" type="text">
+        </div>
+        <i class="material-icons edit" onclick="editItem(event)">edit</i>
+        <i class="material-icons save" onclick="saveItem(event)">save</i>
+        <i class="material-icons delete" onclick="deleteItem(event)">delete</i>
+        <div class="todo-item-edit hidden">
+          <i class="material-icons">save</i>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script src="./src/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2rem;
+}
+
+h1,
+li {
+  color: #40b5fe;
+}
+
+h1 {
+  text-align: center;
+}
+
+.todo-nav {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.todo-input-wrapper {
+  width: 100%;
+  border: 1px solid #c8d0d8;
+  border-radius: 2px;
+  padding: 1rem;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+#add-btn {
+  color: #89c4f4;
+  padding: 0;
+  border: 0;
+  background: 0;
+  font-size: 4rem;
+}
+
+#add-btn:disabled {
+  color: #c8d0d8;
+}
+
+.horizontal-line {
+  color: #e4f2fe;
+  border-width: 0.3rem;
+  border-style: solid;
+}
+
+#notification {
+  color: red;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+ul {
+  position: relative;
+  list-style-type: none;
+  font-size: 18px;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+ul li.drag {
+  outline: 1px solid #40b5fe;
+}
+
+ul li p {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+ul li .edit-input-wrapper {
+  display: none;
+  vertical-align: middle;
+  border: 1px solid #c8d0d8;
+  border-radius: 2px;
+  padding: 0.5rem;
+}
+
+ul li .material-icons.save {
+  display: none;
+}
+
+ul li.edit .edit-input-wrapper {
+  display: inline-block;
+}
+
+ul li.edit p {
+  display: none;
+}
+
+ul li.edit .material-icons.edit {
+  display: none;
+}
+
+ul li.edit .material-icons.delete {
+  display: none;
+}
+
+ul li.edit .material-icons.save {
+  display: inline-block;
+}
+
+ul li.edit .checkbox {
+  display: none;
+}
+
+.material-icons,
+.material-icons:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+ul li .material-icons {
+  vertical-align: middle;
+  color: #89c4f4;
+  font-size: 2.5rem;
+  margin: 0rem 1rem 0rem 0.5rem;
+}
+
+ul li .checkbox {
+  display: inline-block;
+  border: 1px solid #c8d0d8;
+  margin-right: 0.5rem;
+}
+
+ul li .checkbox.checked .material-icons {
+  visibility: visible;
+}
+
+ul li .checkbox .material-icons {
+  visibility: hidden;
+  margin: 0;
+}
+
+ul li .material-icons.delete {
+  position: absolute;
+  right: 0;
+}
