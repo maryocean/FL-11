@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 12 - Simple TODO List</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+  <div id="root">
+    <div class="main">
+      <div class="todo-nav">
+        <h1>Simple TODO Application</h1>
+        <button id="add-btn">Add new task</button>
+        <p>TODO is empty</p>
+        <ul class="todo-item-list">
+          <li id="todo-item-template" class="hidden">
+            <img class="todo-image" onclick="check(event)" src="./assets/img/todo-s.png" alt="">
+            <img class="hidden done-image" onclick="uncheck(event)" src="./assets/img/done-s.png" alt="">
+            <h1 class="task-text">asd</h1>
+            <img class="remove-image" onclick="deleteItem(event)" src="./assets/img/remove-s.jpg" alt="">
+            <p class="id hidden"></p>
+            <p class="is-done hidden"></p>
+          </li>
+        </ul>
+      </div>
+      <div class="add-task">
+        <h1>Add task</h1>
+        <div class="add-task-wrapper">
+          <input type="text" id="add-task-input">
+        </div>
+        <button id="save-btn">Save changes</button>
+        <button class="cancel-btn">Cancel</button>
+      </div>
+      <div class="modify-task">
+        <h1>Modify item</h1>
+        <div class="modify-task-wrapper">
+          <input type="text" id="modify-task-input">
+        </div>
+        <button id="modify-btn">Save changes</button>
+        <button class="cancel-btn">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <script src="./src/app.js"></script>
+</body>
+
+</html>
