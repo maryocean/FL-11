@@ -1,2 +1,39 @@
-/* Your styles go here */
+.main {
+  width: 50%;
+  margin: 0 auto;
+}
 
+.hidden {
+  display: none !important;
+}
+
+.done-item {
+  background-color: gray;
+}
+
+#todo-item-template {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+}
+
+.todo-item-list {
+  padding: 0;
+}
+
+#todo-item-template .task-text {
+  margin: 0;
+  width: 100%;
+}
+
+#todo-item-template .todo-image {
+  align-self: flex-start;
+}
+
+#todo-item-template .done-image {
+  align-self: flex-start;
+}
+
+#todo-item-template .remove-image {
+  align-self: flex-end;
+}
